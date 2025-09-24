@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Upload – Blessed Hots TV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Upload</h1>
+    <p>Privately draft legacy entries before public release.</p>
+  </header>
+  <main>
+    <form id="upload-form">
+      <label>Section:</label>
+      <select id="section">
+        <option value="news">News</option>
+        <option value="biographies">Biographies</option>
+        <option value="trending">Trending</option>
+        <option value="movies">Movies</option>
+        <option value="conflicts">Conflicts</option>
+        <option value="predictions">Predictions</option>
+      </select>
+
+      <label>Title:</label>
+      <input type="text" id="title" required />
+
+      <label>Content:</label>
+      <textarea id="content" rows="5" required></textarea>
+
+      <button type="submit">Save Draft</button>
+    </form>
+    <p id="status"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Blessed Hots TV</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

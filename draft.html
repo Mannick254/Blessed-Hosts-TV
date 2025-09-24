@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draft Viewer – Blessed Hots TV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Encrypted Drafts</h1>
+    <p>Private legacy entries stored securely.</p>
+  </header>
+  <main>
+    <label>Select Section:</label>
+    <select id="section">
+      <option value="news">News</option>
+      <option value="biographies">Biographies</option>
+      <option value="trending">Trending</option>
+      <option value="movies">Movies</option>
+      <option value="conflicts">Conflicts</option>
+      <option value="predictions">Predictions</option>
+    </select>
+    <button onclick="loadDrafts()">View Drafts</button>
+    <div id="draft-feed"></div>
+</div>
+
+  </main>
+   <div id="publish-modal" class="hidden">
+  <div class="modal-content">
+    <h2>Legacy Published</h2>
+    <p>Your entry has been pushed to Blessed Hots TV.</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+  <footer>
+    <p>&copy; 2025 Blessed Hots TV</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
